@@ -1,18 +1,9 @@
-## Getting Started
+SISTEMA DE NOTIFICACIONES Integrantes - Serenity Tamez - Diego Flores - Pablo Sanchez El código define una aplicación de gestión de tareas donde el usuario puede agregar tareas, ordenarlas y cambiar su estado. Se utilizan varias clases como GestorDeTareas, que maneja la lista de tareas, y Tarea, que almacena información sobre cada tarea, como nombre, prioridad, fecha de entrega y estado. El patrón de diseño estrategia se implementa para ordenar las tareas por diferentes criterios (prioridad, fecha, estado). La interfaz gráfica permite al usuario interactuar con las tareas a través de botones que ejecutan acciones como agregar nuevas tareas, cambiar su estado o ordenarlas. El código también usa JOptionPane para recibir entradas del usuario y actualizar la lista visualmente en la interfaz. Al agregar una tarea, esta se guarda en el GestorDeTareas y la lista de tareas se actualiza automáticamente.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Diego se encargo de las clases, y sus diferentes se encargó específicamente de las clases que gestionan la lógica de negocio y el manejo de tareas dentro del proyecto. Estas clases incluyen: GestorDeTareas: Responsable de almacenar y manejar las tareas, y de notificar a los observadores cuando las tareas se agregan, cambian de estado o se ordenan. Tarea: Representa las tareas individuales, almacenando atributos como nombre, prioridad, fecha de entrega y estado. EstrategiaOrdenamiento: Implementa el patrón de diseño "estrategia", que permite cambiar dinámicamente el criterio de ordenamiento de las tareas (por prioridad, fecha o estado). Observer y ObservadorConsola: Implementa el patrón "observador" para recibir notificaciones y mostrar cambios en la consola.
 
-## Folder Structure
+Serenity se encargo de La interfaz gráfica, ésta incluye componentes clave como botones para agregar tareas, cambiar su estado y ordenarlas. Los botones se conectan a las acciones correspondientes del gestor de tareas, y la lista de tareas se actualiza visualmente después de cada operación. Flujo de Trabajo y Uso: El usuario puede: Agregar Tareas: A través de un cuadro de diálogo, el usuario ingresa los detalles de la tarea (nombre, prioridad, fecha de entrega), que luego se agregan a la lista de tareas. Cambiar el Estado de una Tarea: Los estados disponibles para las tareas son "En progreso", "Por hacer" y "Terminada". Ordenar Tareas: El usuario puede ordenar las tareas por prioridad, fecha de entrega o estado, utilizando los botones correspondientes.
 
-The workspace contains two folders by default, where:
+Pablo se encargó de la creación de los diagramas del proyecto. Estos diagramas visualizan la arquitectura y las interacciones entre las clases y componentes del sistema, proporcionando una representación clara y comprensible del flujo de trabajo y la estructura del proyecto, asi como tambien una mayor compresion de los códigos.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Se logró exitosamente las funcionalidades de gestión de tareas con una interfaz gráfica amigable, y la aplicación cumple con los requisitos establecidos. El uso de patrones de diseño como estrategia y observador ha facilitado la flexibilidad y la capacidad de escalabilidad del sistema.
